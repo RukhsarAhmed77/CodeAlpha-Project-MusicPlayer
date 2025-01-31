@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha-Project-MusicPlayer</title>
+    <link href="./icon/play_icon.png"  rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <img src="imges/wp6195977.webp" id="bg-image">
+    </div>
+
+    <div class="container">
+        <div class="album-art">
+            <img src="imges/music12.jpg" class="active" id="cover">
+        </div>
+        <div class="player-info">
+            <h1 id="music-title">Midnight City</h1>
+            <p id="music-artist">Electronic Dreams</p>
+        </div>
+        
+        <div class="progress-container">
+            <div class="player-progress" id="player-progress">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="time-display">
+                <span id="current-time">0:00</span>
+                <span id="duration">3:45</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" id="Previous">
+                <i class="fas fa-step-backward"></i>
+            </button>
+            <button class="control-btn play-button" id="Play">
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-pause" style="display: none;"></i>
+            </button>
+            <button class="control-btn" id="Next">
+                <i class="fas fa-step-forward"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

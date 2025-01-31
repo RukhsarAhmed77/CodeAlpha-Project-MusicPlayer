@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f0f0f;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(24px) brightness(0.7);
+}
+
+.container {
+    background: rgba(25, 25, 25, 0.95);
+    width: 420px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.album-art {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.album-art img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+}
+
+.player-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.player-info h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #f8f9fa;
+}
+
+.player-info p {
+    font-size: 14px;
+    color: #adb5bd;
+    font-weight: 500;
+}
+
+.progress-container {
+    margin: 25px 0;
+}
+
+.player-progress {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: #4dabf7;
+    border-radius: 2px;
+    width: 30%;
+    transition: width 0.1s linear;
+}
+
+.time-display {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #868e96;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: #dee2e6;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.control-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.control-btn.play-button {
+    background: #4dabf7;
+    box-shadow: 0 4px 16px rgba(77, 171, 247, 0.3);
+}
+
+.control-btn.play-button:hover {
+    background: #74c0fc;
+}
+
+.control-btn i {
+    font-size: 18px;
+}
+
+.play-button i{
+    transition: 0.3s ease-in-out;
+}
+
+.control-btn .play-button i {
+    font-size: 24px;
+}
